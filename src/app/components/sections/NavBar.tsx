@@ -23,7 +23,7 @@ export function NavBar() {
         zIndex: 10,
       }}
     >
-      <div style={{ display: "flex", gap: "2rem" }}>
+      <div className="nav-links">
         {navLinks.map((section) => (
           <a
             key={section}

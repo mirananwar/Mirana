@@ -1,0 +1,115 @@
+/* ─── Reset ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+
+/* ─── Layout grids ───────────────────────────────────── */
+
+/* Hero: name left (2fr), tagline right (1fr) */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+/* About outer: sidebar left (1fr), bio right (2fr) */
+.about-outer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* About inner: bio text left, photo right */
+.about-content-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: stretch;
+  margin-bottom: 1.75rem;
+}
+
+/* Generic two-column grid (experience, projects) */
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Featured travel: photo left, write-up right */
+.featured-travel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+/* Contact: text left, card right */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-section {
+  padding: 4rem 2.5rem;
+}
+
+.hero-pad {
+  padding: 3.5rem 2.5rem 3rem;
+}
+
+/* ─── Nav ────────────────────────────────────────────── */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ─── Contact card ───────────────────────────────────── */
+.contact-card {
+  background: #0f0f0f;
+  color: #f5f0e8;
+  padding: 1.75rem 2.5rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ─── Responsive: tablet & mobile (≤ 768px) ─────────── */
+@media (max-width: 768px) {
+
+  /* Grids collapse to single column */
+  .hero-grid,
+  .about-outer-grid,
+  .about-content-grid,
+  .two-col-grid,
+  .featured-travel-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* About photo: natural size, don't stretch */
+  .about-content-grid > div:last-child {
+    width: 100% !important;
+    max-width: 280px;
+  }
+
+  /* Featured travel photo height */
+  .featured-travel-photo {
+    height: 260px !important;
+  }
+
+  /* Nav: hide section links, keep contact button */
+  .nav-links {
+    display: none;
+  }
+
+  /* Contact card: full width */
+  .contact-card {
+    width: 100%;
+  }
+
+  /* Reduce section padding */
+  .section-pad       { padding: 1.5rem !important; }
+  .section-pad-sm    { padding: 1rem 1.5rem !important; }
+  .hero-pad          { padding: 2rem 1.5rem !important; }
+  .contact-section   { padding: 2.5rem 1.5rem !important; }
+}

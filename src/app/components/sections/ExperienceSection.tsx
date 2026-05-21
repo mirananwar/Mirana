@@ -24,7 +24,7 @@ export function ExperienceSection() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+        className="two-col-grid"
       >
         {/* JP Morgan Chase — left column, all three roles */}
         <motion.div variants={fadeUpItem} style={{ padding: "2rem", borderRight: "1px solid #0f0f0f" }}>

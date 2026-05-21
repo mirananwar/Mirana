@@ -21,7 +21,7 @@ export function ProjectsSection() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+        className="two-col-grid"
       >
         {projects.map((project, i) => {
           // Don't draw a bottom border on the last row

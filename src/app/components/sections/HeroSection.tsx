@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 // Full-width hero with name, tagline quote, and CTA buttons.
 export function HeroSection() {
   return (
-    <section style={{ padding: "3.5rem 2.5rem 3rem", borderBottom: "2px solid #0f0f0f" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: "3rem", alignItems: "end" }}>
+    <section className="hero-pad" style={{ borderBottom: "2px solid #0f0f0f" }}>
+      <div className="hero-grid">
 
         {/* Name */}
         <div>

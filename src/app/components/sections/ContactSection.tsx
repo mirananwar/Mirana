@@ -6,14 +6,8 @@ import { FadeInSection } from "@/app/components/ui/FadeInSection";
 export function ContactSection() {
   return (
     <FadeInSection
-      style={{
-        padding: "4rem 2.5rem",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "4rem",
-        alignItems: "center",
-        borderBottom: "2px solid #0f0f0f",
-      }}
+      className="contact-section contact-grid"
+      style={{ borderBottom: "2px solid #0f0f0f" }}
     >
       {/* Left: heading and message */}
       <div id="contact">
@@ -29,8 +23,8 @@ export function ContactSection() {
       </div>
 
       {/* Right: dark card with social icon links */}
-      <div style={{ background: "#0f0f0f", color: "#f5f0e8", padding: "1.75rem", width: "50%", display: "flex", flexDirection: "column" as const, alignItems: "center" }}>
-        <p style={{ fontFamily: "'Helvetica Neue', Arial, sans-serif", fontSize: ".8rem", letterSpacing: ".2em", textTransform: "uppercase" as const, color: "#6b6560", marginBottom: "1.25rem" }}>
+      <div className="contact-card">
+        <p style={{ fontFamily: "'Helvetica Neue', Arial, sans-serif", fontSize: ".75rem", letterSpacing: ".06em", textTransform: "uppercase" as const, color: "#6b6560", marginBottom: "1.25rem", textAlign: "center" as const }}>
           Feel free to reach out to me at
         </p>
         <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>

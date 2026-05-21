@@ -8,7 +8,7 @@ import { topRestaurants, currentlyReading, exploringTech } from "@/app/data/abou
 // About section: left sidebar with restaurants + books, right with bio + photo + tech.
 export function AboutSection() {
   return (
-    <section id="about" style={{ display: "grid", gridTemplateColumns: "1fr 2fr", borderBottom: "2px solid #0f0f0f" }}>
+    <section id="about" className="about-outer-grid" style={{ borderBottom: "2px solid #0f0f0f" }}>
 
       {/* ── Left sidebar ── */}
       <FadeInSection style={{ padding: "2.5rem", borderRight: "1px solid #0f0f0f" }}>
@@ -64,7 +64,7 @@ export function AboutSection() {
         </p>
 
         {/* Bio paragraphs alongside profile photo */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: "2.5rem", alignItems: "stretch", marginBottom: "1.75rem" }}>
+        <div className="about-content-grid">
           <div>
             <p style={{ fontSize: "1.35rem", lineHeight: 1.65, marginBottom: "1.5rem" }}>
               Welcome to my personal corner of the web!

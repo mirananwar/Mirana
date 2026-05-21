@@ -24,9 +24,9 @@ export function TravelSection() {
         whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", borderBottom: "1px solid #0f0f0f" }}
+        className="featured-travel-grid"
       >
-        <div style={{ position: "relative", overflow: "hidden", height: "400px", borderRight: "1px solid #0f0f0f" }}>
+        <div className="featured-travel-photo" style={{ position: "relative", overflow: "hidden", height: "400px", borderRight: "1px solid #0f0f0f" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={featuredDestination.img}
