@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FadeInSection } from "@/app/_components/ui/FadeInSection";
-import { stagger, fadeUpItem } from "@/app/_lib/animations";
-import { topRestaurants, currentlyReading, exploringTech } from "@/app/_data/about";
+import { FadeInSection } from "@/app/components/ui/FadeInSection";
+import { stagger, fadeUpItem } from "@/app/styles/animations";
+import { topRestaurants, currentlyReading, exploringTech } from "@/app/data/about";
 
 // About section: left sidebar with restaurants + books, right with bio + photo + tech.
 export function AboutSection() {
@@ -81,7 +81,7 @@ export function AboutSection() {
           <div style={{ width: "220px", flexShrink: 0 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/mirana_photo.JPG"
+              src="/assets/mirana_photo.JPG"
               alt="Mirana Anwar"
               style={{ width: "100%", height: "100%", display: "block", border: "1px solid #d5d0c8", objectFit: "cover", borderRadius: "12px" }}
             />

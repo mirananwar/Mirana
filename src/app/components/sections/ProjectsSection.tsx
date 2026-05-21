@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FadeInSection } from "@/app/_components/ui/FadeInSection";
-import { stagger, fadeUpItem } from "@/app/_lib/animations";
-import { projects } from "@/app/_data/projects";
+import { FadeInSection } from "@/app/components/ui/FadeInSection";
+import { stagger, fadeUpItem } from "@/app/styles/animations";
+import { projects } from "@/app/data/projects";
 
 // Projects grid: two columns, with "coming soon" styled differently.
 export function ProjectsSection() {

@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeUpItem } from "@/app/_lib/animations";
+import { fadeUpItem } from "@/app/styles/animations";
 import { ScrollStrip } from "./ScrollStrip";
-import type { Destination } from "@/app/_data/travel";
+import type { Destination } from "@/app/data/travel";
 
 // Horizontally scrollable strip of travel destination cards.
 // Each card shows city, country + year, and a short note.

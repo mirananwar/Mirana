@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { datelineItems } from "@/app/_data/about";
+import { datelineItems } from "@/app/data/about";
 
 // Marquee ticker that scrolls across the page twice then stops.
 // Items are tripled so the loop looks seamless before it halts.

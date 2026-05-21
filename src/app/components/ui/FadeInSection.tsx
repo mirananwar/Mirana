@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeUp } from "@/app/_lib/animations";
+import { fadeUp } from "@/app/styles/animations";
 
 // Wraps content in a scroll-triggered fade-up reveal animation.
 // Use this as a drop-in wrapper for any page section.

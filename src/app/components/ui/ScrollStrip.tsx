@@ -2,8 +2,8 @@
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { stagger } from "@/app/_lib/animations";
-import { scrollArrowButton } from "@/app/_lib/styles";
+import { stagger } from "@/app/styles/animations";
+import { scrollArrowButton } from "@/app/styles/styles";
 
 // Generic horizontally-scrollable container with prev/next arrow buttons.
 // Arrows fade in/out based on scroll position.

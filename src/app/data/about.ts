@@ -7,8 +7,8 @@ export const topRestaurants = [
 
 // Sidebar: books currently being read
 export const currentlyReading = [
-  { title: "Before the Coffee Gets Cold", img: "/coffee_book.jpg" },
-  { title: "The Handmaid's Tale",          img: "/handmaid_tale.jpg" },
+  { title: "Before the Coffee Gets Cold", img: "/assets/coffee_book.jpg" },
+  { title: "The Handmaid's Tale",          img: "/assets/handmaid_tale.jpg" },
 ];
 
 // About section: technologies being explored outside of work

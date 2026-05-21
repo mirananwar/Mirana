@@ -14,7 +14,7 @@ export const featuredDestination: FeaturedDestination = {
   country: "Greece",
   year: "2025",
   note: "One week across Athens, Mykonos, and Milos. Bluest water I've ever seen, and some of the best food I've ever had.",
-  img: "/travel-featured.jpg",
+  img: "/assets/travel-featured.jpg",
 };
 
 export const otherDestinations: Destination[] = [

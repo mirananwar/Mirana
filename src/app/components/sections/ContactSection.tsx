@@ -1,6 +1,6 @@
 "use client";
 
-import { FadeInSection } from "@/app/_components/ui/FadeInSection";
+import { FadeInSection } from "@/app/components/ui/FadeInSection";
 
 // Contact section with heading, message, and social icon links (email, LinkedIn, GitHub).
 export function ContactSection() {

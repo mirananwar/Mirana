@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FadeInSection } from "@/app/_components/ui/FadeInSection";
-import { stagger, fadeUpItem } from "@/app/_lib/animations";
-import { experience } from "@/app/_data/experience";
+import { FadeInSection } from "@/app/components/ui/FadeInSection";
+import { stagger, fadeUpItem } from "@/app/styles/animations";
+import { experience } from "@/app/data/experience";
 
 // Work history: JP Morgan Chase featured on the left (multiple roles),
 // other companies stacked compactly on the right, bottom-aligned.

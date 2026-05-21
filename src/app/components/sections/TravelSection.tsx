@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FadeInSection } from "@/app/_components/ui/FadeInSection";
-import { TravelStrip } from "@/app/_components/ui/TravelStrip";
-import { fadeUp } from "@/app/_lib/animations";
-import { featuredDestination, otherDestinations } from "@/app/_data/travel";
+import { FadeInSection } from "@/app/components/ui/FadeInSection";
+import { TravelStrip } from "@/app/components/ui/TravelStrip";
+import { fadeUp } from "@/app/styles/animations";
+import { featuredDestination, otherDestinations } from "@/app/data/travel";
 
 // Travel dispatch: hero card for the latest trip + scrollable strip of other cities.
 export function TravelSection() {
