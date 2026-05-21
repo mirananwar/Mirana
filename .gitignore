@@ -12,5 +12,8 @@ out/
 # local env
 .env*
 
+# typescript cache (auto-generated)
+tsconfig.tsbuildinfo
+
 # debug
 npm-debug.log*
